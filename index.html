@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jimmy's Home Page</title>
+        <style>
+    body {
+        background: rgb(148, 134, 96);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: auto;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(0, 0, 0);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+        border: 5px rgb(148, 134, 96);
+        border-radius: 10px;
+    }
+    nav h1 {
+        display: flex;
+        align-items: center;
+        color: rgb(148, 134, 96);
+        flex: 1;
+        margin: 0;
+    }
+    nav ul {
+        list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(240, 226, 189);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 0px;
+    }
+    .sidebar img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
+        <body>
+            <div id="all-contents">
+                <nav>
+                    <h1>Jimmy's Home Page</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="studies.html">Studies</a></li>
+                    </ul>
+                </nav>
+                
+                <main>
+                    <div class="sidebar">
+                        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/118345542_10219488068455807_1175015215402774731_n.jpg?_nc_cat=109&ccb=2&_nc_sid=8bfeb9&_nc_ohc=CRgtb1OwTmsAX95UM_Y&_nc_ht=scontent-dfw5-2.xx&oh=679ec970eb3c103c6ccf1c5b03b61925&oe=5FC678F0"></img>
+                        
+                    </div>
+                    
+                    <div class="content">
+                        <h2>Jimmy Huynh</h2>
+                        <p>
+                            Operation Spark Student 
+                        </p>
+                            <div class="interests">
+                                <h3>Interests (Triple C's)</h3>
+                                <ul>
+                                    <li>Computers</li>
+                                    <li>Coding</li>
+                                    <li>Cycling</li>
+                                </ul>
+                            </div>
+                    </div>
+                </main>
+            </div>
+        </body>
+    </head>
+</html>
