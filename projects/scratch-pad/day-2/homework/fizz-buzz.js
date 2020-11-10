@@ -12,24 +12,25 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
- // use a for loop to loop through the numbers 1 to 100
- // if i is the remainder of 3 print Fizz
- // if i is the remainder of 5 print Buzz
- // if i is the remainder of 3 && 5 print FizzBuzz
- // other wise console.log i
- 
- for(let i = 1; i <= 100; i++){
-     if(i % 15 === 0){
-         console.log('FizzBuzz');
-     } else if (i % 3 === 0){
-         console.log('Fizz');
-     } else if (i % 5 === 0){
-         console.log('Buzz');
-     } else {
-         console.log(i);
-     } 
- } 
- 
+
+// this function will print out the numbers 1 to 100
+// we want it to print out Fizz, Buzz, and FizzBuzz case sensitive
+// multiples of 3 print Fizz instead of a number
+// multiples of 5 print Buzz instead of a number 
+// and multiples of 3 and 5 print out FizzBuzz
+// use a for loop to loop through the numbers starting at 1 and ending at 100
+
+for(let i = 1; i <= 100; i++){
+    if ( i % 15 === 0){
+        console.log('FizzBuzz');
+    } else if (i % 3 === 0){
+        console.log('Fizz');
+    } else if (i % 5 === 0){
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
+} 
 
 
     // YOUR CODE GOES ABOVE HERE //

@@ -15,11 +15,12 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
-    // input is a value
+    // input is value
     // return true if the value is an array
     // return false if otherwise
     
-  return Array.isArray(value) ? true : false;
+    return Array.isArray(value) ? true : false;
+    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -35,12 +36,7 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-   // input is a value
-   // return true if the value is an object intended as a collection
-   // return false if otherwise
-   // we need to see if the object is not a null, not a array and not a date
-   
- return typeof value === 'object' && !Array.isArray(value) && value !== null && !(value instanceof Date) ? true : false;
+   return typeof value === 'object' && !Array.isArray(value) && value !== null && !(value instanceof Date) ? true : false;
     
     
     // YOUR CODE ABOVE HERE //
@@ -55,16 +51,12 @@ function isObject(value) {
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
-    // input is value
-    // return true if value is an array or an object intended as a collection
-    // return false if otherwise
-    
- if(value === null || value instanceof Date){
-     return false;
- } else if(typeof value === 'object' || Array.isArray(value)){
-     return true;
- } 
-    return false;
+  if (value === null || value instanceof Date){
+      return false;
+  } else if (typeof value === 'object' || Array.isArray(value)){
+      return true;
+  } 
+      return false;
     
     
     // YOUR CODE ABOVE HERE //
@@ -91,19 +83,7 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    // input is a value
-    // return the type of value as a string
-    // Array.isArray(), null and date has to be done first
-    // 
-    if(Array.isArray(value)){
-        return 'array';
-    } else if (value === null){
-        return 'null';
-    } else if(value instanceof Date){
-        return 'date';
-    } else {
-        return typeof value;
-    }
+    
     
     
     

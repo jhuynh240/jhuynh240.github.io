@@ -24,22 +24,22 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
-    // input is 2 numbers: a start and a end
-    // return an array containing the numbers between start and end
-    // create a collection
-    // use a for loop to loop through the numbers 
-    // push the numbers into the collection
+    // this function has 2 parameters
+    // the parameters is start and end, which is a number
+    // return an array containing all the numbers between the 2 parameters
+    // return an array printing it in reverse if the start is higher than the end
     
     let arr = [];
-  
-if(start < end){
-    for(let i = start; i <= end; i++)
-    arr.push(i);
-} else if (start > end){
-    for(let i = start; i >= end; i--)
-    arr.push(i);
-} return arr;
     
+    if(start < end){
+        for(let i = start; i <= end; i++)
+            arr.push(i);
+    } else if (start > end){
+        for(let i = start; i >= end; i--)
+            arr.push(i);
+      
+    }     return arr; 
+       
     
     
     

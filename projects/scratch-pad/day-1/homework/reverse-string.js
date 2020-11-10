@@ -21,21 +21,14 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-  
-  // input is a string
-  // create a collection to collect the output
-  // use for loop to loop through the string and push it in the collection
-  // return the string in reverse using .join('')
-  
-  let reverse = [];
-  for(let i = input.length -1; i >= 0; i--){
-    reverse.push(input[i]);
     
-  } return reverse.join('');
-  
-
+    // let newStr = [];
+    // for(let i = 0; i < input.length; i++){
+    //   newStr.push(input[i]);
+    // } return newStr.reverse().join('');
     
     
+    return input.split('').reverse().join('');
     
     // YOUR CODE GOES ABOVE HERE //
 }

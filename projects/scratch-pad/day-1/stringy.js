@@ -14,8 +14,10 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
+    
+// input is a string
+// return the length of the string
 
-// return the length of the parameter string    
 return string.length;
 
     // YOUR CODE ABOVE HERE //
@@ -26,8 +28,12 @@ return string.length;
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
+
+// iput is a string
 // return the string to lower case
+
 return string.toLowerCase();
+
 
     // YOUR CODE ABOVE HERE //
 }
@@ -38,7 +44,9 @@ return string.toLowerCase();
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
 
+// input is a string
 // return the string to upper case
+
 return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
@@ -60,11 +68,11 @@ return string.toUpperCase();
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
 
-// return the string with a dash in between
-// must enforce lowercase
-// must use string methods split and join
+// input is a string
+// return the string to dash case
+// use the method split, join and toLowerCase 
 
-return string.split(' ').join('-').toLowerCase();
+return string.toLowerCase().split(' ').join('-');
 
     // YOUR CODE ABOVE HERE //
 }
@@ -84,11 +92,13 @@ return string.split(' ').join('-').toLowerCase();
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-// input is a string and a single character
-// return true if the character is same as the first letter in the string
-// if the first character isn't the same return false
+// the parameters is a string and a single character called char
+// return true if the first letter of the  string begins with char
+// return false if otherwise 
+// this function is case sensitive so use toLowerCase
 
 return string[0].toLowerCase() === char.toLowerCase() ? true : false;
+    
 
     // YOUR CODE ABOVE HERE //
 }
@@ -107,10 +117,11 @@ return string[0].toLowerCase() === char.toLowerCase() ? true : false;
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-// input is a string and a character
-// return true if the string ends with the same letter of the character
-// return false if not the same
-// the function is case insensitive
+
+// the parameters is a string and a single character called char
+// return true if the string ends with the same as char 
+// return false if otherwise 
+// the function is case sensitive so must use toLowerCase()
 
 return string[string.length -1].toLowerCase() === char.toLowerCase() ? true : false;
 
@@ -126,9 +137,12 @@ return string[string.length -1].toLowerCase() === char.toLowerCase() ? true : fa
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-// input will be 2 strings
-// return the 2 string concatenated to each other
-return stringOne + stringTwo;
+// 2 parameters called stringOne and stringTwo
+// join both strings together 
+// will use concat()
+
+return stringOne.concat(stringTwo);
+
 
     // YOUR CODE ABOVE HERE //
 }
@@ -146,10 +160,15 @@ return stringOne + stringTwo;
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-// input is 2 strings
-// return all of them joined together
+
+// the parameters are strings....stringOne, stringTwo also any other number of strings
+// return the strings joined together
+// the function already have a variable called args which stores all the arguments in an array
+// return args using .join
 
 return args.join('');
+
+
 
     // YOUR CODE ABOVE HERE //
 }
@@ -166,13 +185,11 @@ return args.join('');
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-// input is the 2 strings
-// return the longest of the 2 strings
-if ( stringOne.length > stringTwo.length){
-    return stringOne;
-} else if (stringOne.length < stringTwo.length){
-    return stringTwo;
-}
+// 2 parameters called stringOne and stringTwo
+// return the longest of the 2 
+
+return stringOne.length > stringTwo.length ? stringOne : stringTwo;
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -186,21 +203,12 @@ if ( stringOne.length > stringTwo.length){
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-// input 2 strings 
-// return 1 if the first is higher in alphabetical order
-// return -1 if the alphabetical order if the second is higher than the first
-// return 0 if they're equal
+// 2 parameters called stringOne and stringTwo
+// return 1 if stringOne is higher in the alpha order 
+// return -1 if stringTwo is higher in the alpha order
+// return 0 if they are equal 
 
-
-if(stringOne < stringTwo){
-    return 1;
-} else if(stringOne > stringTwo){
-    return -1;
-} else {
-    return 0;
-}
-
-
+return stringOne === stringTwo ? 0 : (stringTwo < stringOne ? -1 : 1);
 
 
     // YOUR CODE ABOVE HERE //
@@ -217,19 +225,12 @@ if(stringOne < stringTwo){
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-// input is 2 strings
-// return 1 if the first string is lower than the second string in alpha order
-// return -1 if the second is lower than the first
-// return 0 if they're equal
+// 2 parameters called stringOne and stringTwo
+// return 1 if stringOne is higher in the alpha order 
+// return -1 if stringTwo is higher in the alpha order
+// return 0 if they are equal 
 
-if(stringOne > stringTwo){
-    return 1;
-} else if(stringOne < stringTwo){
-    return -1;
-} else {
-    return 0;
-}
-
+return stringOne === stringTwo ? 0 : (stringTwo > stringOne ? -1 : 1);
 
     // YOUR CODE ABOVE HERE //
 }

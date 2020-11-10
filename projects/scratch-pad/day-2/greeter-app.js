@@ -36,13 +36,18 @@
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
     
-    // if the hours are between a certain time, print message
-    // use if else if statement to complete code
-    if( hour >= 0 && hour <= 11){
+    // use if statement to complete this problem
+    // print out the message using console.log
+    // if the hour is 0 to 11 print Good Morning! case sensitive
+    // if the hour is 12 to 16 print Good Afternoon! case sensitive
+    // if the hour is 17 to 21 print Good Evening! case sensitive
+    // if the hour is 22 to 24 print Good Night! case sensitive
+    
+    if(hour >= 0 && hour <= 11){
         console.log('Good Morning!')
-    } else if (hour >= 12 && hour <= 16){
+    } else if(hour >= 12 && hour <= 16){
         console.log('Good Afternoon!')
-    } else if (hour >= 17 && hour <= 21 ){
+    } else if(hour >= 17 && hour <= 21){
         console.log('Good Evening!')
     } else {
         console.log('Good Night!')
